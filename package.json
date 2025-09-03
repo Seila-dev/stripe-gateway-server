@@ -21,6 +21,7 @@
     "@prisma/client": "^6.15.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
+    "express": "^5.1.0",
     "stripe": "^18.5.0",
     "typescript": "^5.9.2"
   }
