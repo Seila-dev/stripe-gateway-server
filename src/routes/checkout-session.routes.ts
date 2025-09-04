@@ -1,4 +1,4 @@
-import { CreateCheckoutSession } from '../controllers/create-checkout-session';
+import { CreateCheckoutSession } from '../controllers/CreateCheckoutSection';
 // import { authMiddleware } from '../middlewares/auth';
 import { Router } from 'express';
 

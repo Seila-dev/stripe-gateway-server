@@ -1,13 +1,9 @@
+import dotenv from 'dotenv';
+import { App } from './app';
 
+dotenv.config();
 
-import { app } from './app'
-import checkoutRoutes from './routes/checkout-session.routes'
+const port = parseInt(process.env.PORT || '3001', 10);
+const app = new App();
 
-const port = 3000
-
-app.listen(port, () => {
-    console.log(`HTTP Server Running! Server: http://localhost:${port}`)
-})
-
-// app uses
-app.use("/checkout", checkoutRoutes)
+app.listen(port);
