@@ -1,7 +1,8 @@
 
 
 import { app } from './app'
-import checkoutRoutes from './routes/checkout-session.routes'
+import checkoutRoutes from './routes/checkout-session-routes'
+import UsersRoutes from './routes/user-routes'
 
 const port = 3000
 
@@ -11,3 +12,4 @@ app.listen(port, () => {
 
 // app uses
 app.use("/checkout", checkoutRoutes)
+app.use("/users", UsersRoutes)
